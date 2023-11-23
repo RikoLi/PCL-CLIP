@@ -4,6 +4,9 @@
 
 In this work, we propose a simple yet effective approach to adapt CLIP for supervised Re-ID, which directly fine-tunes the image encoder of CLIP using a Prototypical Contrastive Learning loss. Experimental results demonstrate the simplicity and competitiveness of our method compared to recent prompt-learning-based [CLIP-ReID](). Futhermore, our investigation indicates the essential consistency between the CLIP-ReID and our method.
 
+## Upload History
+
+* 2023/11/23: Full model (ID loss + CC loss) is ready.
 
 ## Pipeline
 ![pipeline](assets/pcl-clip-pipeline.jpg)
