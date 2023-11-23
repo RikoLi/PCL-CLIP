@@ -70,6 +70,12 @@ class TransReID(nn.Module):
         clip_model.to("cuda")
 
         self.image_encoder = clip_model.visual
+        
+        # Trick: freeze patch projection for improved stability
+        # https://arxiv.org/pdf/2104.02057.pdf
+        for _, v in self.image_encoder.conv1.named_parameters():
+            v.requires_grad_(False)
+        print('Freeze patch projection layer with shape {}'.format(self.image_encoder.conv1.weight.shape))
 
         if cfg.MODEL.SIE_CAMERA and cfg.MODEL.SIE_VIEW:
             self.cv_embed = nn.Parameter(torch.zeros(camera_num * view_num, self.in_planes))
