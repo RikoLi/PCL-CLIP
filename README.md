@@ -1,5 +1,10 @@
 # Prototypical Contrastive Learning-based CLIP Fine-tuning for Object Re-identification
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/prototypical-contrastive-learning-based-clip/unsupervised-person-re-identification-on-12)](https://paperswithcode.com/sota/unsupervised-person-re-identification-on-12?p=prototypical-contrastive-learning-based-clip) \
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/prototypical-contrastive-learning-based-clip/unsupervised-vehicle-re-identification-on)](https://paperswithcode.com/sota/unsupervised-vehicle-re-identification-on?p=prototypical-contrastive-learning-based-clip) \
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/prototypical-contrastive-learning-based-clip/unsupervised-person-re-identification-on-4)](https://paperswithcode.com/sota/unsupervised-person-re-identification-on-4?p=prototypical-contrastive-learning-based-clip)
+
+
 [[paper]](https://arxiv.org/pdf/2310.17218.pdf)
 
 In this work, we propose a simple yet effective approach to adapt CLIP for supervised Re-ID, which directly fine-tunes the image encoder of CLIP using a Prototypical Contrastive Learning loss. Experimental results demonstrate the simplicity and competitiveness of our method compared to recent prompt-learning-based [CLIP-ReID](). Futhermore, our investigation indicates the essential consistency between the CLIP-ReID and our method.
